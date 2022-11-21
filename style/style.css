@@ -1,0 +1,589 @@
+body {
+  margin: 0;
+}
+body ul {
+  list-style-type: none;
+}
+body section menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  color: #F26E20;
+  font-size: 1.5rem;
+  display: none;
+}
+body section nav {
+  display: flex;
+  justify-content: center;
+  background: #059FFF;
+  z-index: 2;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+body section nav .container {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #fff;
+}
+body section nav .container .right {
+  display: flex;
+  align-items: center;
+}
+body section nav .container .right .logo {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+body section nav .container .right .logo h1 {
+  margin: 0;
+  font-size: 60px;
+}
+body section nav .container .right .logo span {
+  align-self: flex-end;
+  font-weight: 600;
+  font-size: 20px;
+}
+body section nav .container .right ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+body section nav .container .right ul li {
+  margin: 0 40px;
+  font-size: 1rem;
+}
+body section nav .container .right .add {
+  background: #fff;
+  color: #059FFF;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 20px 30px;
+  margin-right: 40px;
+  font-size: 18px;
+}
+body section nav .container .left {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1rem;
+  flex-wrap: wrap;
+}
+body section nav .container .left i {
+  font-size: 40px;
+}
+body section nav .container .left .icons {
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+}
+body section nav .container .left .icons svg {
+  font-size: 30px;
+  padding: 10px;
+  margin: 0 5px;
+}
+body section nav .container .left .icons .iconsDynamic {
+  display: flex;
+}
+body section nav .container .left .icons .iconsDynamic .messages {
+  position: relative;
+}
+body section nav .container .left .icons .iconsDynamic .messages span {
+  position: absolute;
+  background: #F26E20;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  padding: 2px 4px;
+  top: 0;
+  right: 0;
+}
+body section nav .container .left .icons .iconsDynamic .notifications {
+  position: relative;
+}
+body section nav .container .left .icons .iconsDynamic .notifications span {
+  position: absolute;
+  background: #F26E20;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  padding: 2px 4px;
+  top: 0;
+  right: 0;
+}
+body section nav .container .left .profile {
+  display: flex;
+  align-items: center;
+}
+body section nav .container .left .profile .img {
+  width: 50px;
+  height: 50px;
+  background: url("../img/images.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+body section nav .container .left .profile span {
+  margin: 20px;
+}
+body section main {
+  background: url("../img/backgroundImage.webp") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  position: relative;
+}
+body section main .shadow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(99, 94, 95, 0.6);
+}
+body section main div {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+body section main div span {
+  font-weight: bold;
+}
+body section main div .path {
+  display: flex;
+  flex-direction: row;
+}
+body section main div .path .pathMain {
+  font-weight: normal;
+}
+body section main div .path .pathChats {
+  color: #059FFF;
+  font-weight: normal;
+}
+body section .chat {
+  display: flex;
+  justify-content: center;
+  background: #F8F9FE;
+  padding-bottom: 60px;
+}
+body section .chat .container {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+}
+body section .chat .container .chaTop .text h4 {
+  color: #535455;
+  font-size: 30px;
+}
+body section .chat .container .chaTop .text p {
+  color: #9F9F9F;
+  font-size: 25px;
+}
+body section .chat .container .chatBar {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  width: 100%;
+  display: none;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  position: relative;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  margin: 10px 0;
+  display: none;
+}
+body section .chat .container .chatBar .containerChatBar {
+  display: flex;
+  background: #fff;
+  padding: 15px 0;
+  cursor: pointer;
+  width: 80%;
+  overflow-y: auto;
+}
+body section .chat .container .chatBar .containerChatBar .img {
+  min-width: 50px;
+  height: 50px;
+  background-size: cover;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin: 0 9px;
+}
+body section .chat .container .chatBar .containerChatBar .img span {
+  position: absolute;
+  top: -20px;
+  background: #9F9F9F;
+  padding: 10px;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  width: auto;
+  opacity: 0;
+}
+body section .chat .container .chatBar .containerChatBar .img:hover span {
+  opacity: 1;
+}
+body section .chat .container .hiddenChatBar {
+  width: 0%;
+}
+body section .chat .container .containerChatBar::-webkit-scrollbar {
+  height: 0px;
+}
+body section .chat .container .containerChatBar::-webkit-scrollbar-track {
+  background: #059FFF;
+}
+body section .chat .container .containerChatBar::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+body section .chat .container .chatBottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100%;
+}
+body section .chat .container .chatBottom .chatList::-webkit-scrollbar {
+  width: 21px;
+  height: 200rem;
+}
+body section .chat .container .chatBottom .chatList::-webkit-scrollbar-track {
+  background: #EEF0F8;
+  height: 20px;
+}
+body section .chat .container .chatBottom .chatList::-webkit-scrollbar-thumb {
+  background-color: #059FFF;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+body section .chat .container .chatBottom .chatList {
+  background: #fff;
+  width: 23%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  direction: ltr;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+body section .chat .container .chatBottom .chatList .Clients {
+  border-bottom: 1px solid #e0e3ed;
+  direction: rtl;
+  flex-wrap: wrap;
+  cursor: pointer;
+  position: relative;
+}
+body section .chat .container .chatBottom .chatList .Clients #chatScreen {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+body section .chat .container .chatBottom .chatList .Clients .activeChat {
+  background-color: rgba(159, 159, 159, 0.2);
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+body section .chat .container .chatBottom .chatList .Clients .topClient {
+  display: flex;
+  padding: 15px;
+  padding-bottom: 0;
+  align-items: center;
+}
+body section .chat .container .chatBottom .chatList .Clients .topClient .img {
+  width: 50px;
+  height: 50px;
+  background: url("../img/images.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+body section .chat .container .chatBottom .chatList .Clients .topClient .clientName {
+  color: #635e5f;
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 15px;
+}
+body section .chat .container .chatBottom .chatList .Clients .bottomUser {
+  display: flex;
+  justify-content: space-between;
+  color: #9F9F9F;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+body section .chat .container .chatBottom .chatList .Clients .bottomUser .clientMessage {
+  font-size: 17px;
+}
+body section .chat .container .chatBottom .clientChat {
+  position: relative;
+  width: 72%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+body section .chat .container .chatBottom .clientChat #togleChatBar {
+  display: none;
+  cursor: pointer;
+}
+body section .chat .container .chatBottom .clientChat #togleChatBar svg {
+  font-size: 25px;
+  position: absolute;
+  top: -63px;
+  right: 12px;
+}
+body section .chat .container .chatBottom .clientChat .topClientChat {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e0e3ed;
+  padding-bottom: 20px;
+  margin: 20px 40px;
+}
+body section .chat .container .chatBottom .clientChat .topClientChat .img {
+  width: 70px;
+  height: 70px;
+  background: url("../img/images.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+body section .chat .container .chatBottom .clientChat .topClientChat span {
+  font-size: 25px;
+  color: #635e5f;
+  font-weight: bold;
+  margin-right: 30px;
+}
+body section .chat .container .chatBottom .clientChat .middleClientChat::-webkit-scrollbar {
+  width: 21px;
+}
+body section .chat .container .chatBottom .clientChat .middleClientChat {
+  overflow-y: auto;
+  margin-bottom: 30px;
+}
+body section .chat .container .chatBottom .clientChat .middleClientChat .chats {
+  display: flex;
+  flex-direction: column;
+}
+body section .chat .container .chatBottom .clientChat .middleClientChat .chats .message {
+  background: #e0e3ed;
+  margin: 10px 40px;
+  padding: 20px;
+  width: 40%;
+  border-radius: 15px 15px 0 10px;
+  -webkit-border-radius: 15px 15px 0 10px;
+  -moz-border-radius: 15px 15px 0 10px;
+  -ms-border-radius: 15px 15px 0 10px;
+  -o-border-radius: 15px 15px 0 10px;
+  font-weight: 500;
+  font-size: 1rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  color: #635e5f;
+}
+body section .chat .container .chatBottom .clientChat .middleClientChat .chats .message span {
+  font-size: 15px;
+}
+body section .chat .container .chatBottom .clientChat .middleClientChat .chats .message p {
+  margin: 0 20px;
+}
+body section .chat .container .chatBottom .clientChat .middleClientChat .chats .EEF0F8 {
+  border-radius: 0 25px 25px 25px;
+  -webkit-border-radius: 0 25px 25px 25px;
+  -moz-border-radius: 0 25px 25px 25px;
+  -ms-border-radius: 0 25px 25px 25px;
+  -o-border-radius: 0 25px 25px 25px;
+  align-self: flex-end;
+  background: #EEF0F8;
+}
+body section .chat .container .chatBottom .clientChat .BottomChat {
+  border-radius: 40px 40px 0 0;
+  -webkit-border-radius: 40px 40px 0 0;
+  -moz-border-radius: 40px 40px 0 0;
+  -ms-border-radius: 40px 40px 0 0;
+  -o-border-radius: 40px 40px 0 0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  background: #EEF0F8;
+  padding: 20px 30px;
+}
+body section .chat .container .chatBottom .clientChat .BottomChat .input {
+  width: 100%;
+  padding: 0;
+  position: relative;
+}
+body section .chat .container .chatBottom .clientChat .BottomChat .input input {
+  width: 98%;
+  border: none;
+  height: 3rem;
+  font-size: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+body section .chat .container .chatBottom .clientChat .BottomChat .input input:focus {
+  outline: none !important;
+  border-color: #e0e3ed;
+  box-shadow: 0 0 10px #e0e3ed;
+}
+body section .chat .container .chatBottom .clientChat .BottomChat .input svg {
+  position: absolute;
+  top: 0.5rem;
+  left: 20px;
+  font-size: 30px;
+  color: #059FFF;
+  cursor: pointer;
+}
+body section footer {
+  display: flex;
+  background: #EEF0F8;
+  display: flex;
+  flex-direction: column;
+}
+body section footer div {
+  display: flex;
+  justify-content: center;
+}
+body section footer div .container {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body section footer .top {
+  font-weight: bold;
+  font-size: 20px;
+  color: #635e5f;
+  padding-bottom: 20px;
+}
+body section footer .top .container div ul {
+  padding: 0;
+}
+body section footer .top .container div ul li {
+  padding: 10px;
+}
+body section footer .top .container .right ul li:first-child {
+  color: #059FFF;
+}
+body section footer .top .container .left {
+  display: flex;
+  flex-direction: column;
+}
+body section footer .top .container .left .apps {
+  width: 100%;
+  display: flex;
+}
+body section footer .top .container .left .apps div {
+  height: 30px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+body section footer .top .container .left .apps .appStore {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  width: 45%;
+  background: url("../img/logo1-2.png") no-repeat;
+  background-size: cover;
+  margin-left: 2px;
+}
+body section footer .top .container .left .apps .googleplay {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  width: 45%;
+  background: url("../img/logo1-1.png") no-repeat;
+  background-size: cover;
+  margin-right: 2px;
+}
+body section footer .bottom {
+  background: #059FFF;
+}
+body section footer .bottom .container {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+body section footer .bottom .container ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+body section footer .bottom .container ul li {
+  padding: 10px;
+  font-size: 20px;
+}
+body section footer .bottom .container ul li:first-child svg:first-child {
+  color: #fff;
+}
+body section footer .bottom .container ul li:nth-child(2) svg {
+  color: #fff;
+}
+body section footer .bottom .container ul li:nth-child(3) svg {
+  color: #fff;
+}
+body section footer .bottom .container ul li:nth-child(4) svg {
+  color: #fff;
+}
+body section footer .bottom .container .copyRight p {
+  color: #fff;
+  letter-spacing: 2px;
+}/*# sourceMappingURL=style.css.map */

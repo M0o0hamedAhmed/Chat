@@ -1,0 +1,243 @@
+@media (min-width: 280px) and (max-width: 1024px) {
+  body section menu {
+    display: block;
+    cursor: pointer;
+  }
+  body section .navHeight {
+    height: 100vh;
+    width: 100%;
+  }
+  body section nav {
+    height: 0vh;
+    display: flex;
+    justify-content: center;
+  }
+  body section nav .container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0;
+    flex-wrap: nowrap;
+  }
+  body section nav .container .right {
+    flex-direction: column;
+    justify-content: center;
+  }
+  body section nav .container .right ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  body section nav .container .right ul li {
+    margin: 1.5rem 0;
+  }
+  body section nav .container .right .add {
+    margin: 0;
+  }
+  body section nav .container .left {
+    justify-content: space-around;
+    order: -1;
+    height: 25vh;
+    flex-direction: column;
+  }
+  body section nav .container .left .icons {
+    margin: 0;
+  }
+  body section nav .container .left .icons svg {
+    padding: 0 10px;
+  }
+  body section nav .container .left .profile {
+    order: -1;
+    justify-content: center;
+  }
+  body section main {
+    height: 100vh;
+  }
+  body section .chat .container .chatBar {
+    display: flex;
+  }
+  body section .chat .container .chatBottom {
+    width: 100%;
+  }
+  body section .chat .container .chatBottom .chatList {
+    display: none;
+  }
+  body section .chat .container .chatBottom .clientChat {
+    width: 100%;
+  }
+  body section .chat .container .chatBottom .clientChat #togleChatBar {
+    display: inline;
+  }
+  body section .chat .container .chatBottom .clientChat .topClientChat {
+    margin: 20px;
+  }
+  body section .chat .container .chatBottom .clientChat .topClientChat .img {
+    width: 50px;
+    height: 50px;
+  }
+  body section .chat .container .chatBottom .clientChat .topClientChat span {
+    font-size: 20px;
+  }
+  body section .chat .container .chatBottom .clientChat .middleClientChat::-webkit-scrollbar {
+    width: 0;
+  }
+  body section .chat .container .chatBottom .clientChat .middleClientChat .chats {
+    justify-content: center;
+    padding: 0 15px;
+  }
+  body section .chat .container .chatBottom .clientChat .middleClientChat .chats .message p {
+    margin: 0 10px 0 0;
+  }
+  body section .chat .container .chatBottom .clientChat .middleClientChat .chats .mainUser {
+    margin: 15px 0;
+    padding: 8px;
+    width: 55%;
+  }
+  body section .chat .container .chatBottom .clientChat .BottomChat .input svg {
+    left: 0;
+  }
+  body section footer .top .container {
+    flex-direction: column;
+  }
+  body section footer .top .container div {
+    padding: 0;
+    margin: 0;
+  }
+  body section footer .top .container div ul {
+    padding: 0;
+    margin: 0;
+  }
+  body section footer .top .container div ul li {
+    padding: 10px 0;
+    margin: 0;
+  }
+  body section footer .top .container .right {
+    justify-content: flex-start;
+  }
+  body section footer .top .container .mid {
+    justify-content: flex-start;
+  }
+  body section footer .top .container .left .apps {
+    flex-direction: column;
+    justify-content: center;
+    height: 20vh;
+  }
+  body section footer .top .container .left .apps div {
+    margin: 10px 0;
+    width: 34% !important;
+  }
+}
+@media (min-width: 280px) and (max-width: 1024px) and (min-width: 1188px) and (max-width: 1288px) {
+  body section footer .top .container .left .apps div {
+    width: 15% !important;
+  }
+}
+@media (min-width: 280px) and (max-width: 1024px) and (min-width: 1086px) and (max-width: 1187px) {
+  body section footer .top .container .left .apps {
+    height: 10vh;
+  }
+  body section footer .top .container .left .apps div {
+    width: 16% !important;
+  }
+}
+@media (min-width: 280px) and (max-width: 1024px) and (min-width: 986px) and (max-width: 1085px) {
+  body section footer .top .container .left .apps {
+    height: 20vh;
+  }
+  body section footer .top .container .left .apps div {
+    width: 13% !important;
+  }
+}
+@media (min-width: 280px) and (max-width: 1024px) and (min-width: 885px) and (max-width: 985px) {
+  body section footer .top .container .left .apps div {
+    width: 14% !important;
+  }
+}
+@media (min-width: 280px) and (max-width: 1024px) and (min-width: 784px) and (max-width: 884px) {
+  body section footer .top .container .left .apps div {
+    width: 15% !important;
+  }
+}
+@media (min-width: 280px) and (max-width: 1024px) and (min-width: 683px) and (max-width: 783px) {
+  body section footer .top .container .left .apps div {
+    width: 17% !important;
+  }
+}
+@media (min-width: 280px) and (max-width: 1024px) and (min-width: 582px) and (max-width: 683px) {
+  body section footer .top .container .left .apps {
+    height: 10vh;
+  }
+  body section footer .top .container .left .apps div {
+    width: 20% !important;
+  }
+}
+@media (min-width: 280px) and (max-width: 1024px) and (min-width: 482px) and (max-width: 582px) {
+  body section footer .top .container .left .apps {
+    height: 10vh;
+  }
+  body section footer .top .container .left .apps div {
+    width: 27% !important;
+  }
+}
+@media (min-width: 280px) and (max-width: 1024px) and (min-width: 381px) and (max-width: 481px) {
+  body section footer .top .container .left .apps div {
+    width: 32% !important;
+  }
+}
+@media (min-width: 280px) and (max-width: 1024px) and (min-width: 360px) and (max-width: 380px) {
+  body section footer .top .container .left .apps div {
+    width: 35% !important;
+  }
+}
+@media (min-width: 280px) and (max-width: 1024px) and (min-width: 280px) and (max-width: 359px) {
+  body section footer .top .container .left .apps div {
+    width: 44% !important;
+  }
+}
+@media (min-width: 280px) and (max-width: 1024px) {
+  body section footer .bottom .container {
+    justify-content: center;
+  }
+  body section footer .bottom .container ul {
+    padding-top: 10px;
+  }
+  body section footer .bottom .container .copyRight p {
+    text-align: center;
+    width: 80%;
+    white-space: 20rem;
+    line-height: 1.5rem;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1424px) {
+  body section menu {
+    display: none;
+    cursor: pointer;
+  }
+  body section nav .container .right .logo h1 {
+    font-size: 20px;
+  }
+  body section nav .container .right ul li {
+    margin: 10px;
+  }
+  body section nav .container .right .add {
+    padding: 7px 9px;
+    margin-right: 10px;
+  }
+  body section nav .container .left .icons {
+    margin-left: 0px;
+  }
+  body section nav .container .left .icons svg {
+    font-size: 1.5rem;
+  }
+  body section .chat .container .chatBottom .chatList::-webkit-scrollbar {
+    width: 15px;
+  }
+  body section .chat .container .chatBottom .chatList .Clients .topClient .clientName {
+    font-size: 1.3rem;
+  }
+  body section .chat .container .chatBottom .chatList .Clients .bottomUser .timeLastMessage {
+    margin-top: 1rem;
+  }
+}/*# sourceMappingURL=styleResponsive.css.map */

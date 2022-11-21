@@ -1,0 +1,864 @@
+body {
+    margin: 0;
+    $baseColor: #059FFF;
+    $secondColor: #e0e3ed;
+    $tripleColor: #EEF0F8;
+    $quaternary: #F26E20;
+    $quinary: #F8F9FE;
+    $six: #535455;
+    $seven: #9F9F9F;
+    $WhiteColor: #fff;
+    $blackColor: #635e5f;
+    $shadow: 4, 5, 8;
+
+    ul {
+        list-style-type: none;
+    }
+
+
+
+
+    @mixin container {
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    @mixin bordRadius($num) {
+        border-radius: $num;
+        -webkit-border-radius: $num;
+        -moz-border-radius: $num;
+        -ms-border-radius: $num;
+        -o-border-radius: $num;
+    }
+
+
+    @mixin transition ($time) {
+        transition: all $time;
+        -webkit-transition: all $time;
+        -moz-transition: all $time;
+        -ms-transition: all $time;
+        -o-transition: all $time;
+    }
+
+
+
+
+    section {
+        // .navSmallScreen{display: none;}
+
+        menu {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 100;
+            color: $quaternary;
+            font-size: 1.5rem;
+            display: none;
+
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: $baseColor;
+            z-index: 2;
+            @include transition(.5s);
+
+
+
+            .container {
+                @include container;
+                color: $WhiteColor;
+
+                .right {
+                    display: flex;
+                    align-items: center;
+                    //   flex-wrap: wrap;
+
+                    .logo {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 10px 0;
+
+                        h1 {
+                            margin: 0;
+                            font-size: 60px;
+
+                        }
+
+                        span {
+                            align-self: flex-end;
+                            font-weight: 600;
+                            font-size: 20px;
+
+                        }
+                    }
+
+                    ul {
+                        list-style-type: none;
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        li {
+
+                            margin: 0 40px;
+                            // font-size: 20px;
+                            font-size: 1rem;
+                        }
+                    }
+
+                    .add {
+                        background: $WhiteColor;
+                        color: $baseColor;
+                        @include bordRadius(5px);
+                        padding: 20px 30px;
+                        margin-right: 40px;
+                        font-size: 18px;
+
+                        i {}
+
+                        span {}
+                    }
+                }
+
+                .left {
+                    display: flex;
+                    justify-content: flex-end;
+                    //  font-size: 20px;
+                    font-size: 1rem;
+                    //  width: 50%;
+                    flex-wrap: wrap;
+
+                    i {
+                        font-size: 40px;
+                    }
+
+                    .icons {
+                        display: flex;
+                        align-items: center;
+                        margin-left: 70px;
+
+
+                        svg {
+                            font-size: 30px;
+                            padding: 10px;
+                            margin: 0 5px;
+
+                        }
+
+                        .iconsDynamic {
+                            display: flex;
+
+                            .messages {
+                                position: relative;
+
+                                i {}
+
+                                span {
+                                    position: absolute;
+                                    background: $quaternary;
+                                    @include bordRadius(50%);
+                                    padding: 2px 4px;
+                                    top: 0;
+                                    right: 0;
+
+                                }
+                            }
+
+                            .notifications {
+                                position: relative;
+
+                                i {}
+
+                                span {
+                                    position: absolute;
+                                    background: $quaternary;
+                                    @include bordRadius(50%);
+                                    padding: 2px 4px;
+                                    top: 0;
+                                    right: 0;
+
+
+                                }
+                            }
+                        }
+                    }
+
+                    .profile {
+                        display: flex;
+                        align-items: center;
+
+
+                        .img {
+
+                            width: 50px;
+                            height: 50px;
+                            background: url("../img/images.jpg") no-repeat;
+                            background-size: cover;
+                            @include bordRadius(50%);
+
+                            img {}
+                        }
+
+                        span {
+                            margin: 20px;
+                        }
+
+                        i {}
+                    }
+                }
+
+            }
+        }
+
+        main {
+            background: url("../img/backgroundImage.webp") no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            position: relative;
+
+            .shadow {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: rgba($color: $blackColor, $alpha: .6);
+
+
+            }
+
+            div {
+                z-index: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: $WhiteColor;
+
+                span {
+                    font-weight: bold;
+                }
+
+                .path {
+                    display: flex;
+                    flex-direction: row;
+
+                    .pathMain {
+                        font-weight: normal;
+                    }
+
+                    .pathChats {
+                        color: $baseColor;
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+
+        .chat {
+            display: flex;
+            justify-content: center;
+            background: $quinary;
+            padding-bottom: 60px;
+
+            .container {
+                @include container;
+                flex-direction: column;
+                align-items: flex-start;
+                  overflow: hidden;
+                
+
+
+                .chaTop {
+                    .text {
+
+                        h4 {
+                            color: $six;
+                            font-size: 30px;
+                        }
+
+                        p {
+                            color: $seven;
+                            font-size: 25px;
+                        }
+                    }
+                }
+
+                .chatBar {
+                    @include transition(.5s);
+                    width: 100%;
+                    display: none;
+                    display: flex;
+                    justify-content: center;
+                    background: $WhiteColor;
+                     position: relative;
+                    box-shadow: 0 3px 10px rgb(0 0 0/ 0.2);
+                    margin: 10px 0;
+                    display: none;
+                 /// overflow: hidden;
+                //  overflow-y: hidden;
+                    
+
+                    .containerChatBar {
+                        display: flex;
+                        background: $WhiteColor;
+                        padding: 15px 0;
+                        //   padding: 10px 20px;
+                        cursor: pointer;
+
+
+                        width: 80%;
+
+
+
+                        overflow-y: auto;
+                        //white-space: nowrap;
+
+
+                        .img {
+                            // margin: 5px;
+                            min-width: 50px;
+                            height: 50px;
+                          //  background: url("../img/images.jpg") no-repeat;
+                            background-size: cover;
+                            @include bordRadius(50%);
+                            margin: 0 9px;
+                         //    position: relative;
+                            span{
+                              
+                                position: absolute;
+                                top: -20px;
+                                // right: 15px;
+                                background: $seven;
+                                padding: 10px;
+                                @include bordRadius(2rem) ;
+                                @include transition(.2s) ;
+                                width: auto;
+                                opacity :0 ;
+                               
+                                
+    
+                            }
+    
+                        }
+                        .img:hover  span{
+                            opacity :1 ;
+                           // z-index: 5;
+                        }
+
+                    }
+
+
+                    
+                   
+                    
+
+
+
+
+                }
+
+                .hiddenChatBar {
+                    width: 0%;
+                }
+
+                .containerChatBar::-webkit-scrollbar {
+                    // width: 20px;
+                    height: 0px;
+
+                }
+
+
+                .containerChatBar::-webkit-scrollbar-track {
+                    background: $baseColor;
+
+                }
+
+                .containerChatBar::-webkit-scrollbar-thumb {
+                    background-color: $WhiteColor;
+                    @include bordRadius(15px);
+
+                }
+
+                .chatBottom {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    height: 100vh;
+                    width: 100%;
+
+                    .chatList::-webkit-scrollbar {
+                        width: 21px;
+                        height: 200rem;
+                    }
+
+
+                    .chatList::-webkit-scrollbar-track {
+                        background: $tripleColor;
+                        height: 20px;
+                    }
+
+                    .chatList::-webkit-scrollbar-thumb {
+                        background-color: $baseColor;
+                        @include bordRadius(15px);
+                      
+
+                    }
+                   
+
+                    .chatList {
+                        background: $WhiteColor;
+                        width: 23%;
+                        height: 100vh;
+                        overflow-y: scroll;
+                        //   padding: 15px 0;
+                        //   scrollbar-color: red;
+                        scroll-behavior: smooth;
+                        direction: ltr;
+                        //    scrollbar-color:  $quaternary $quaternary;
+                        box-shadow: 0 3px 10px rgb(0 0 0/ 0.2);
+
+
+
+                        .Clients {
+                            border-bottom: 1px solid $secondColor;
+                            direction: rtl;
+                            flex-wrap: wrap;
+                            cursor: pointer;
+                            position: relative;
+                          //  z-index: 1;
+                      
+                            #chatScreen{
+                                height: 100%;
+                                width: 100%;
+                                position: absolute;
+                               
+                               // z-index: 100;
+                                
+                            }
+                            .activeChat{
+                                background-color: rgba($seven, .2);
+                                
+                              
+                                @include transition(.2s)
+                              }
+
+                            .topClient {
+                                display: flex;
+                                padding: 15px;
+                                padding-bottom: 0;
+                                align-items: center;
+                            //    z-index: 1;
+      
+                                .img {
+                                    width: 50px;
+                                    height: 50px;
+                                    background: url("../img/images.jpg") no-repeat;
+                                    background-size: cover;
+                                    @include bordRadius(50%);
+                                }
+
+                                .clientName {
+                                    color: $blackColor;
+                                    font-size: 20px;
+                                    font-weight: 500;
+                                    margin-right: 15px;
+                                }
+                            } 
+
+                            .bottomUser {
+                                display: flex;
+                                justify-content: space-between;
+                                color: $seven;
+                                padding: 15px;
+                                flex-wrap: wrap;
+
+                                .clientMessage {
+                                    font-size: 17px;
+                                }
+
+                                .timeLastMessage {
+                                    svg {}
+
+                                    span {}
+                                } 
+                            }
+                        }
+                    }
+
+
+                    .clientChat {
+                        position: relative;
+
+                        #togleChatBar{
+                            display: none;
+                            cursor: pointer;
+                             svg {
+                            font-size: 25px;
+                            position: absolute;
+                            top: -63px;
+                            right: 12px;
+                           
+                          
+                        }
+                    }
+                        width: 72%;
+                        //  margin-right: 5%;
+                        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+                        //   padding: 30px 20px;
+                        display: flex;
+                        flex-direction: column;
+                        height: 100vh;
+                        justify-content: space-between;
+
+                        .topClientChat {
+                            display: flex;
+                            align-items: center;
+                            border-bottom: 1px solid $secondColor;
+                            padding-bottom: 20px;
+                            margin: 20px 40px;
+
+
+
+                            .img {
+                                width: 70px;
+                                height: 70px;
+                                background: url("../img/images.jpg") no-repeat;
+                                background-size: cover;
+                                @include bordRadius(50%);
+                            }
+
+                            span {
+                                font-size: 25px;
+                                color: $blackColor;
+                                font-weight: bold;
+                                margin-right: 30px;
+
+                            }
+                        }
+
+                        // .middleClientChat::-webkit-scrollbar {
+                        //     width: 21px;
+                        // }
+
+
+                        // .middleClientChat::-webkit-scrollbar-track {
+                        //     background: $tripleColor;
+                        // }
+
+                        // .chatLimiddleClientChatst::-webkit-scrollbar-thumb {
+                        //     background-color: $baseColor;
+                        //     @include bordRadius(15px);
+
+                        // }
+
+                        .middleClientChat::-webkit-scrollbar {
+                            width: 21px;
+                        }
+
+
+                        // .middleClientChat::-webkit-scrollbar-track {
+                        //     background: $tripleColor;
+                        // }
+
+                        // .middleClientChat::-webkit-scrollbar-thumb {
+                        //    background-color: $baseColor;
+                        //     @include bordRadius(15px);
+
+                        // }
+
+
+                        .middleClientChat {
+                            // height: 100%;
+                            // height: 90vh;
+                            overflow-y: auto;
+                            // max-height: 100px;
+                            // display: flex;
+                            // flex-direction: column;
+                            // justify-content: space-between;
+                            margin-bottom: 30px;
+                            .chats {
+                                display: flex;
+                                flex-direction: column;
+
+
+                                .message {
+                                    background: $secondColor;
+                                    //  background: $tripleColor;
+                                    margin: 10px 40px;
+                                    padding: 20px;
+                                    width: 40%;
+                                    @include bordRadius(15px 15px 0 10px);
+                                    font-weight: 500;
+                                    // font-size: 25px;
+                                    font-size: 1rem;
+                                    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+                                    display: flex;
+                                    align-items: center;
+                                    color: $blackColor;
+
+                                    span {
+                                        font-size: 15px
+                                    }
+
+                                    p {
+                                        margin: 0 20px
+                                    }
+
+                                }
+
+                                .EEF0F8 {
+                                    @include bordRadius(0 25px 25px 25px);
+                                    align-self: flex-end;
+                                    background: $tripleColor;
+                                }
+
+                                .otherMessageBorder {
+                                    // @include bordRadius(0 25px 25px 25px);
+                                    // align-self: flex-end;
+                                    // background: $tripleColor;
+                                }
+
+                                .mainUser {
+                                    span {}
+                                }
+
+                                .otherUser {
+                                    span {}
+
+                                }
+                            }
+                        }
+
+                        .BottomChat {
+                            //  width: 100%;
+                            // align-self: center;
+                            //   align-content: flex-end;
+                            @include bordRadius(40px 40px 0 0);
+                            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+                            background: $tripleColor;
+                            padding: 20px 30px;
+
+
+                            .input {
+                                width: 100%;
+                                padding: 0;
+                                position: relative;
+                                //  margin: 20px; 
+
+
+                                input {
+                                    width: 98%;
+                                    border: none;
+                                    height: 3rem;
+                                    font-size: 20px;
+                                    padding-right: 20px;
+                                    @include bordRadius(10px);
+
+                                }
+
+                                input:focus {
+                                    outline: none !important;
+                                    border-color: $secondColor;
+                                    box-shadow: 0 0 10px $secondColor;
+                                }
+
+                                svg {
+                                    position: absolute;
+                                    top: .5rem;
+                                    left: 20px;
+                                    font-size: 30px;
+                                    color: $baseColor;
+                                    cursor: pointer;
+
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+        footer {
+            display: flex;
+            background: $tripleColor;
+            display: flex;
+            flex-direction: column;
+
+            div {
+                display: flex;
+                justify-content: center;
+
+                .container {
+                    @include container();
+                    justify-content: space-between;
+                }
+            }
+
+            .top {
+
+                font-weight: bold;
+                font-size: 20px;
+                color: $blackColor;
+                padding-bottom: 20px;
+
+                .container {
+
+                    div {
+                        ul {
+                            padding: 0;
+
+                            li {
+                                padding: 10px;
+                            }
+                        }
+                    }
+
+                    .right {
+                        ul {
+                            li:first-child {
+                                color: $baseColor;
+                            }
+
+                            li {}
+                        }
+                    }
+
+                    .mid {
+                        ul {
+                            li {}
+                        }
+                    }
+
+                    .left {
+                        display: flex;
+                        flex-direction: column;
+                        //  width: 33.3%;
+
+                        ul {
+                            li {}
+                        }
+
+                        .apps {
+
+                            width: 100%;
+                            display: flex;
+               
+
+
+
+                            div {
+                                height: 30px;
+                                // margin: 6px;
+                                @include bordRadius(5px)
+                            }
+
+                            .appStore {
+                                color: $WhiteColor;
+                                //      background: $blackColor;
+                                padding: 0;
+                                margin: 0;
+                                display: flex;
+                                align-items: center;
+                                width: 45%;
+                                //   height: 35;
+                                background: url("../img/logo1-2.png") no-repeat;
+                                background-size: cover;
+                                margin-left: 2px;
+
+
+                            }
+
+                            .googleplay {
+                                padding: 0;
+                                // margin: 10px;
+                                display: flex;
+                                align-items: center;
+                                width: 45%;
+                                //   height: 35px;
+                                background: url("../img/logo1-1.png") no-repeat;
+                                background-size: cover;
+                                // background: $blackColor;
+                                margin-right: 2px;
+
+                                //   .text{
+                                //     display: flex;
+                                //         flex-direction: column;
+                                //         p{
+
+                                //         }
+                                //         span{
+
+                                //         }
+                                //     }
+                                //      svg{
+
+                                //      }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .bottom {
+                background: $baseColor;
+
+                .container {
+                    @include container();
+
+                    ul {
+                        display: flex;
+                        margin: 0;
+                        padding: 0;
+
+                        li {
+                            padding: 10px;
+                            font-size: 20px;
+                        }
+
+                        li:first-child {
+                            svg:first-child {
+                                color: $WhiteColor
+                            }
+                        }
+
+                        li:nth-child(2) {
+                            svg {
+                                color: $WhiteColor;
+                            }
+                        }
+
+                        li:nth-child(3) {
+                            svg {
+                                color: $WhiteColor;
+                            }
+                        }
+
+                        li:nth-child(4) {
+                            svg {
+                                color: $WhiteColor;
+                            }
+                        }
+                    }
+
+                    .copyRight {
+                        p {
+                            color: $WhiteColor;
+                            letter-spacing: 2px;
+
+                            span {}
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

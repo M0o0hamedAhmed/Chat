@@ -1,0 +1,1401 @@
+// 320px — 480px: Mobile devices
+// 481px — 768px: iPads, Tablets
+// 769px — 1024px: Small screens, laptops
+// 1025px — 1200px: Desktops, large screens
+// 1201px and more —  Extra large screens, TV
+@media (min-width: 320px) and (max-width: 480px) {}
+
+@media (min-width: 481px) and (max-width: 768px) {}
+
+@media (min-width: 769px) and (max-width: 1024) {}
+
+@media (min-width: 1025px) and (max-width: 1200) {}
+
+@media (min-width: 1201px) {}
+//1433px
+@media (min-width: 280px) and (max-width: 1024px) {
+
+    body {
+        section {
+            menu {
+                display: block;
+                cursor: pointer;
+            }
+
+            nav:hover {
+                //height: 0vh;
+            }
+
+            .navHeight {
+                height: 100vh;
+                width: 100%;
+            }
+
+            nav {
+                // display: block;
+                height: 0vh;
+                display: flex;
+                justify-content: center;
+
+
+                .container {
+
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    // align-content: stretch;
+                    padding: 10px 0;
+                    flex-wrap: nowrap;
+
+                    .right {
+                        flex-direction: column;
+                        justify-content: center;
+
+                        .logo {
+
+
+                            h1 {}
+
+                            span {}
+                        }
+
+                        ul {
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 0;
+                            padding: 0;
+
+                            li {
+                                margin: 1.5rem 0;
+                            }
+                        }
+
+                        .add {
+                            margin: 0;
+
+                            i {}
+
+                            span {}
+                        }
+                    }
+
+                    .left {
+                        justify-content: space-around;
+                        order: -1;
+                        height: 25vh;
+                        flex-direction: column;
+
+                        i {}
+
+                        .icons {
+
+                            margin: 0;
+
+                            svg {
+                                padding: 0 10px;
+                            }
+
+                            .iconsDynamic {
+
+
+                                .messages {
+
+
+                                    i {}
+
+                                    span {}
+                                }
+
+                                .notifications {
+
+                                    i {}
+
+                                    span {}
+                                }
+                            }
+                        }
+
+                        .profile {
+                            order: -1;
+                            justify-content: center;
+
+
+                            .img {
+
+
+
+                                img {}
+                            }
+
+                            span {}
+
+                            i {}
+                        }
+                    }
+
+
+                   
+                }
+            }
+
+            main {
+                height: 100vh;
+
+                .shadow {}
+
+                div {
+
+
+                    span {}
+
+                    .path {
+
+
+                        .pathMain {}
+
+                        .pathChats {}
+                    }
+                }
+            }
+
+            .chat {
+
+
+                .container {
+
+
+
+
+
+                    .chaTop {
+                        .text {
+                            h4 {}
+
+                            p {}
+                        }
+                    }
+
+                    .chatBar {
+                        display: flex;
+                    }
+
+                    .chatBottom {
+                        width: 100%;
+                        // padding: 0;
+                        // margin: 0;
+
+
+
+                        .chatList::-webkit-scrollbar {}
+
+
+                        .chatList::-webkit-scrollbar-track {}
+
+                        .chatList::-webkit-scrollbar-thumb {}
+
+                        .chatList {
+
+                            display: none;
+
+
+                            .Clients {
+
+
+                                .topClient {
+
+
+                                    .img {}
+
+                                    .clientName {}
+                                }
+
+                                .bottomUser {
+
+
+                                    .clientMessage {}
+
+                                    .timeLastMessage {
+                                        svg {}
+
+                                        span {}
+                                    }
+                                }
+                            }
+                        }
+
+
+                        .clientChat {
+                            width: 100%;
+
+                            #togleChatBar {
+                                display: inline;
+                                svg {
+                                    
+                                }
+
+                            }
+
+                            .topClientChat {
+
+                                margin: 20px;
+
+
+                                .img {
+                                    width: 50px;
+                                    height: 50px;
+                                }
+
+                                span {
+                                    font-size: 20px;
+                                }
+                            }
+
+
+                            .middleClientChat::-webkit-scrollbar {
+                                width: 0;
+                            }
+
+
+
+
+                            .middleClientChat {
+
+                                .chats {
+
+                                    justify-content: center;
+                                    padding: 0 15px;
+
+                                    .message {
+
+
+                                        span {}
+
+                                        p {
+                                            margin: 0 10px 0 0;
+                                        }
+
+                                    }
+
+                                    .EEF0F8 {}
+
+                                    .otherMessageBorder {}
+
+                                    .mainUser {
+
+                                        margin: 15px 0;
+                                        padding: 8px;
+                                        width: 55%;
+
+                                        span {}
+                                    }
+
+                                    .otherUser {
+                                        span {}
+
+                                    }
+                                }
+                            }
+
+                            .BottomChat {
+
+
+
+                                .input {
+
+
+
+                                    input {}
+
+                                    input:focus {}
+
+                                    svg {
+                                        left: 0;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            footer {
+
+
+                div {
+
+
+                    .container {}
+                }
+
+                .top {
+
+
+                    .container {
+                        flex-direction: column;
+
+                        div {
+                            padding: 0;
+                            margin: 0;
+
+                            ul {
+                                padding: 0;
+                                margin: 0;
+
+                                li {
+                                    padding: 10px 0;
+                                    margin: 0;
+                                }
+                            }
+                        }
+
+                        .right {
+                            justify-content: flex-start;
+
+                            ul {
+                                li:first-child {}
+
+                                li {}
+                            }
+                        }
+
+                        .mid {
+                            justify-content: flex-start;
+
+                            ul {
+                                li {}
+                            }
+                        }
+
+                        .left {
+
+                            ul {
+                                li {}
+                            }
+
+                            .apps {
+                                flex-direction: column;
+                                justify-content: center;
+                                //   align-items: center;
+                                height: 20vh;
+
+
+
+                                div {
+                                    //  height: 210px;
+                                    margin: 10px 0;
+                                    width: 34% !important;
+                                }
+
+
+                            }
+
+                            @media (min-width: 1188px) and (max-width: 1288px) {
+                                .apps {
+
+
+                                    div {
+                                        width: 15% !important // height: 30%;
+                                    }
+
+
+                                }
+                            }
+
+                            @media (min-width: 1086px) and (max-width: 1187px) {
+                                .apps {
+                                    height: 10vh;
+
+                                    div {
+                                        width: 16% !important // height: 30%;
+                                    }
+
+
+                                }
+                            }
+
+                            @media (min-width: 986px) and (max-width: 1085px) {
+                                .apps {
+                                    height: 20vh;
+
+                                    div {
+                                        width: 13% !important // height: 30%;
+                                    }
+
+
+                                }
+                            }
+
+
+                            @media (min-width: 885px) and (max-width: 985px) {
+                                .apps {
+                                    div {
+                                        width: 14% !important // height: 30%;
+                                    }
+
+                                }
+                            }
+
+                            @media (min-width: 784px) and (max-width: 884px) {
+                                .apps {
+                                    div {
+                                        width: 15% !important // height: 30%;
+                                    }
+
+                                }
+                            }
+
+                            @media (min-width: 683px) and (max-width: 783px) {
+                                .apps {
+
+
+                                    div {
+                                        width: 17% !important // height: 30%;
+                                    }
+
+
+                                }
+                            }
+
+                            @media (min-width: 582px) and (max-width: 683px) {
+                                .apps {
+                                    height: 10vh;
+
+                                    div {
+                                        width: 20% !important // height: 30%;
+                                    }
+
+
+                                }
+                            }
+
+
+                            @media (min-width: 482px) and (max-width: 582px) {
+                                .apps {
+                                    height: 10vh;
+
+                                    div {
+                                        width: 27% !important // height: 30%;
+                                    }
+
+
+                                }
+                            }
+
+                            @media (min-width: 381px) and (max-width: 481px) {
+                                .apps {
+                                    div {
+                                        width: 32% !important // height: 30%;
+                                    }
+
+                                }
+                            }
+
+                            @media (min-width: 360px) and (max-width: 380px) {
+                                .apps {
+                                    div {
+                                        width: 35% !important // height: 30%;
+                                    }
+
+                                }
+                            }
+
+                            @media (min-width: 280px) and (max-width: 359px) {
+                                .apps {
+                                    div {
+                                        width: 44% !important // height: 30%;
+                                    }
+
+                                }
+                            }
+
+                            // @media (min-width: 480px) and (max-width: 574px) {
+                            //     .apps {
+                            //         div {
+                            //             width: 44% !important // height: 30%;
+                            //         }
+
+                            //     }
+                            // }
+                        }
+                    }
+                }
+
+                .bottom {
+
+
+                    .container {
+                        justify-content: center;
+
+                        ul {
+                            padding-top: 10px;
+
+
+                            li {}
+
+                            li:first-child {
+                                svg:first-child {}
+                            }
+
+                            li:nth-child(2) {
+                                svg {}
+                            }
+
+                            li:nth-child(3) {
+                                svg {}
+                            }
+
+                            li:nth-child(4) {
+                                svg {}
+                            }
+                        }
+
+                        .copyRight {
+                            p {
+                                text-align: center;
+                                width: 80%;
+                                white-space: 20rem;
+                                line-height: 1.5rem;
+
+
+                                span {}
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+///////////////////////////////////    
+
+@media (min-width: 1025px) and (max-width: 1424px) {
+body {
+    section {
+        menu {
+            display: none;
+            cursor: pointer;
+        }
+        nav:hover {
+
+        }
+
+        .navHeight {
+
+        }
+
+        nav {
+
+
+            .container {
+
+
+
+                .right {
+    //width: 50%;
+
+                    .logo {
+
+
+                        h1 {
+                            font-size: 20px;
+                        }
+
+                        span {}
+                    }
+
+                    ul {
+
+
+                        li {
+                            margin: 10px;
+                        }
+                    }
+
+                    .add {
+                        padding: 7px 9px;
+                        margin-right: 10px;
+                        i {}
+
+                        span {}
+                    }
+                }
+
+                .left {
+                   // width: 50%;
+
+
+                    i {}
+
+                    .icons {
+
+margin-left: 0px;
+
+                        svg {
+font-size: 1.5rem;
+                        }
+
+                        .iconsDynamic {
+
+
+                            .messages {
+
+
+                                i {}
+
+                                span {}
+                            }
+
+                            .notifications {
+
+                                i {}
+
+                                span {}
+                            }
+                        }
+                    }
+
+                    .profile {
+
+
+
+                        .img {
+
+
+
+                            img {}
+                        }
+
+                        span {}
+
+                        i {}
+                    }
+                }
+
+            }
+        }
+
+        main {
+
+
+            .shadow {}
+
+            div {
+
+
+                span {}
+
+                .path {
+
+
+                    .pathMain {}
+
+                    .pathChats {}
+                }
+            }
+        }
+
+        .chat {
+
+
+            .container {
+
+
+
+
+
+                .chaTop {
+                    .text {
+                        h4 {}
+
+                        p {}
+                    }
+                }
+
+                .chatBar {
+
+                }
+
+                .chatBottom {
+
+
+
+
+                    .chatList::-webkit-scrollbar {
+                        width: 15px;
+                    }
+
+
+                    .chatList::-webkit-scrollbar-track {}
+
+                    .chatList::-webkit-scrollbar-thumb {}
+
+                    .chatList {
+
+
+
+                        .Clients {
+
+
+                            .topClient {
+
+
+                                .img {}
+
+                                .clientName {
+                                    font-size: 1.3rem;
+                                }
+                            }
+
+                            .bottomUser {
+
+
+                                .clientMessage {}
+
+                                .timeLastMessage {
+                                    margin-top: 1rem;
+                                    svg {}
+
+                                    span {}
+                                }
+                            }
+                        }
+                    }
+
+
+                    .clientChat {
+
+
+                        #togleChatBar {
+                            svg {
+
+                            }
+
+                        }
+
+                        .topClientChat {
+
+
+
+
+                            .img {
+
+                            }
+
+                            span {
+
+                            }
+                        }
+
+
+                        .middleClientChat::-webkit-scrollbar {
+
+                        }
+
+
+
+
+                        .middleClientChat {
+
+                            .chats {
+
+
+
+                                .message {
+
+
+                                    span {}
+
+                                    p {
+
+                                    }
+
+                                }
+
+                                .EEF0F8 {}
+
+                                .otherMessageBorder {}
+
+                                .mainUser {
+
+
+
+                                    span {}
+                                }
+
+                                .otherUser {
+                                    span {}
+
+                                }
+                            }
+                        }
+
+                        .BottomChat {
+
+
+
+                            .input {
+
+
+
+                                input {}
+
+                                input:focus {}
+
+                                svg {
+
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+        footer {
+
+
+            div {
+
+
+                .container {}
+            }
+
+            .top {
+
+
+                .container {
+
+
+                    div {
+
+
+                        ul {
+
+
+                            li {
+
+                            }
+                        }
+                    }
+
+                    .right {
+
+
+                        ul {
+                            li:first-child {}
+
+                            li {}
+                        }
+                    }
+
+                    .mid {
+
+
+                        ul {
+                            li {}
+                        }
+                    }
+
+                    .left {
+
+                        ul {
+                            li {}
+                        }
+
+                        .apps {
+
+
+
+
+                            div {
+
+                            }
+
+
+                        }
+
+
+
+
+                    }
+                }
+            }
+
+            .bottom {
+
+
+                .container {
+
+
+                    ul {
+
+
+
+                        li {}
+
+                        li:first-child {
+                            svg:first-child {}
+                        }
+
+                        li:nth-child(2) {
+                            svg {}
+                        }
+
+                        li:nth-child(3) {
+                            svg {}
+                        }
+
+                        li:nth-child(4) {
+                            svg {}
+                        }
+                    }
+
+                    .copyRight {
+                        p {
+
+
+                            span {}
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+}
+
+
+
+
+
+//Empty Style  For edit on responsive  
+/////////
+////////
+
+
+
+
+
+
+
+
+
+
+
+/////////////
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////
+/////////////////////////////////////
+////////////////////////////////
+
+
+
+
+// body {
+//     section {
+//         menu {
+//             display: block;
+//             cursor: pointer;
+//         }
+//         nav:hover {
+
+//         }
+
+//         .navHeight {
+
+//         }
+
+//         nav {
+
+
+//             .container {
+
+
+
+//                 .right {
+
+
+//                     .logo {
+
+
+//                         h1 {}
+
+//                         span {}
+//                     }
+
+//                     ul {
+
+
+//                         li {
+//                         }
+//                     }
+
+//                     .add {
+
+//                         i {}
+
+//                         span {}
+//                     }
+//                 }
+
+//                 .left {
+
+
+//                     i {}
+
+//                     .icons {
+
+
+
+//                         svg {
+
+//                         }
+
+//                         .iconsDynamic {
+
+
+//                             .messages {
+
+
+//                                 i {}
+
+//                                 span {}
+//                             }
+
+//                             .notifications {
+
+//                                 i {}
+
+//                                 span {}
+//                             }
+//                         }
+//                     }
+
+//                     .profile {
+
+
+
+//                         .img {
+
+
+
+//                             img {}
+//                         }
+
+//                         span {}
+
+//                         i {}
+//                     }
+//                 }
+
+//             }
+//         }
+
+//         main {
+
+
+//             .shadow {}
+
+//             div {
+
+
+//                 span {}
+
+//                 .path {
+
+
+//                     .pathMain {}
+
+//                     .pathChats {}
+//                 }
+//             }
+//         }
+
+//         .chat {
+
+
+//             .container {
+
+
+
+
+
+//                 .chaTop {
+//                     .text {
+//                         h4 {}
+
+//                         p {}
+//                     }
+//                 }
+
+//                 .chatBar {
+
+//                 }
+
+//                 .chatBottom {
+
+
+
+
+//                     .chatList::-webkit-scrollbar {}
+
+
+//                     .chatList::-webkit-scrollbar-track {}
+
+//                     .chatList::-webkit-scrollbar-thumb {}
+
+//                     .chatList {
+
+//                         display: none;
+
+
+//                         .Clients {
+
+
+//                             .topClient {
+
+
+//                                 .img {}
+
+//                                 .clientName {}
+//                             }
+
+//                             .bottomUser {
+
+
+//                                 .clientMessage {}
+
+//                                 .timeLastMessage {
+//                                     svg {}
+
+//                                     span {}
+//                                 }
+//                             }
+//                         }
+//                     }
+
+
+//                     .clientChat {
+
+
+//                         #togleChatBar {
+//                             svg {
+
+//                             }
+
+//                         }
+
+//                         .topClientChat {
+
+
+
+
+//                             .img {
+
+//                             }
+
+//                             span {
+
+//                             }
+//                         }
+
+
+//                         .middleClientChat::-webkit-scrollbar {
+
+//                         }
+
+
+
+
+//                         .middleClientChat {
+
+//                             .chats {
+
+
+
+//                                 .message {
+
+
+//                                     span {}
+
+//                                     p {
+
+//                                     }
+
+//                                 }
+
+//                                 .EEF0F8 {}
+
+//                                 .otherMessageBorder {}
+
+//                                 .mainUser {
+
+
+
+//                                     span {}
+//                                 }
+
+//                                 .otherUser {
+//                                     span {}
+
+//                                 }
+//                             }
+//                         }
+
+//                         .BottomChat {
+
+
+
+//                             .input {
+
+
+
+//                                 input {}
+
+//                                 input:focus {}
+
+//                                 svg {
+
+//                                 }
+//                             }
+
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+
+//         footer {
+
+
+//             div {
+
+
+//                 .container {}
+//             }
+
+//             .top {
+
+
+//                 .container {
+
+
+//                     div {
+
+
+//                         ul {
+
+
+//                             li {
+
+//                             }
+//                         }
+//                     }
+
+//                     .right {
+
+
+//                         ul {
+//                             li:first-child {}
+
+//                             li {}
+//                         }
+//                     }
+
+//                     .mid {
+
+
+//                         ul {
+//                             li {}
+//                         }
+//                     }
+
+//                     .left {
+
+//                         ul {
+//                             li {}
+//                         }
+
+//                         .apps {
+
+
+
+
+//                             div {
+
+//                             }
+
+
+//                         }
+
+
+
+
+//                     }
+//                 }
+//             }
+
+//             .bottom {
+
+
+//                 .container {
+
+
+//                     ul {
+
+
+
+//                         li {}
+
+//                         li:first-child {
+//                             svg:first-child {}
+//                         }
+
+//                         li:nth-child(2) {
+//                             svg {}
+//                         }
+
+//                         li:nth-child(3) {
+//                             svg {}
+//                         }
+
+//                         li:nth-child(4) {
+//                             svg {}
+//                         }
+//                     }
+
+//                     .copyRight {
+//                         p {
+
+
+//                             span {}
+//                         }
+//                     }
+//                 }
+//             }
+
+//         }
+//     }
+// }
